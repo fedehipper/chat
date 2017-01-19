@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
 		//funciones de cliente
 		//inicia el socket para conectarse con el servidor
 
-			client_init(&socket_servidor, "127.0.0.1", "4143");
+			client_init(&socket_servidor, "127.0.0.1g", "4143");
 			printf("conectado al servidor...\n");
 
 		//pasaje de mensaje
