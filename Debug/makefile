@@ -35,7 +35,7 @@ chat: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) chat
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) chat
 	-@echo ' '
 
 .PHONY: all clean dependents

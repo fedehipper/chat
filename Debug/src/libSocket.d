@@ -1,1 +1,1 @@
-src/libSocket.o: ../src/libSocket.c
+src/libSocket.d: ../src/libSocket.c
