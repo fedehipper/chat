@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: chat\ tcp
+all: chat_tcp
 
 # Tool invocations
-chat\ tcp: $(OBJS) $(USER_OBJS)
+chat_tcp: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "chat tcp" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "chat_tcp" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) "chat tcp"
+	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) chat_tcp
 	-@echo ' '
 
 .PHONY: all clean dependents
